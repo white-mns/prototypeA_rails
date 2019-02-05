@@ -1,11 +1,8 @@
-%h1 定期更新ゲーム過去結果データ小屋
+%h1 prototype-A
 %p
-  このサイトでは
-  %a{:href => "https://archives.teiki.org/", :target => "_blank"} 定期更新ゲーム名
-  を解析して得られる情報を扱っています。
+  このサイトは
+  戦闘結果生成システムのプロトタイプです。
 %br
-%p 
-  #{top_result_no(nil,nil)}更新結果まで反映済です。
 
 = javascript_pack_tag 'hello_vue'
 .card.top
@@ -19,6 +16,8 @@
       .col-md-6
         %ul
           %li 結果データ
+          %ul  
+            %li= link_to "戦闘結果生成", top_page_make_battle_log_path
 
 .card.top
   .card-body
