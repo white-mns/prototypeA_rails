@@ -4,8 +4,11 @@ class TopPageController < ApplicationController
 
   def make_battle_log
       begin
-          @result = IO.popen("./battle_start") {|io|
-            io.gets
+          @result = Array.new
+          IO.popen("./battle_start") {|io|
+              while line = io.gets
+                  @result.push(line)
+              end
           }
       rescue
           @result = "結果生成エラー"
