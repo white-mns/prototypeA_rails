@@ -4,4 +4,6 @@
   .card-body
     .row
       .col-md-12
-        = @result
+        - @result.each do |result|
+          = result
+          %br
