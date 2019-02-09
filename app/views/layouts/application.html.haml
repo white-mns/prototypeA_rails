@@ -22,15 +22,10 @@
           %ul.navbar-nav
             %li.nav-item.dropdown
               %a.nav-link.dropdown-toggle#themes{ :data => {:toggle =>"dropdown"}, :href => "#"}
-                個人データ
+                戦闘結果
                 %span.caret
               .dropdown-menu
-                .dropdown-divider
-            %li.nav-item.dropdown
-              %a.nav-link.dropdown-toggle#themes{ :data => {:toggle =>"dropdown"}, :href => "#"}
-                結果データ
-                %span.caret
-              .dropdown-menu
+                = link_to "戦闘結果生成", top_page_make_battle_log_path, class: "dropdown-item"
                 .dropdown-divider
 
     .container

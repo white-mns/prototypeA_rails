@@ -4,20 +4,18 @@
   戦闘結果生成システムのプロトタイプです。
 %br
 
-= javascript_pack_tag 'hello_vue'
+= #javascript_pack_tag 'hello_vue'
+
 .card.top
   .card-body
     %h2 サイトマップ
     .row
       .col-md-6
         %ul
-          %li 個人データ
-          %ul  
-      .col-md-6
-        %ul
-          %li 結果データ
+          %li 戦闘結果
           %ul  
             %li= link_to "戦闘結果生成", top_page_make_battle_log_path
+      .col-md-6
 
 .card.top
   .card-body
