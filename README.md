@@ -11,7 +11,7 @@
 OS:CentOS release 6.5 (Final)  
 DB:MySQL 8.0.13
 Ruby:2.5.0  
-Rails:5.2.1
+Rails:5.2.1 
 gcc:7.3.1
 
 ## 使い方
