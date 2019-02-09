@@ -5,7 +5,7 @@ class TopPageController < ApplicationController
   def make_battle_log
       @result = Array.new
       begin
-          IO.popen("./battle_start") {|io|
+          IO.popen("./vendor/battle_start") {|io|
               while line = io.gets
                   @result.push(line)
               end
