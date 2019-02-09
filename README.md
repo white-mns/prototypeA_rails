@@ -18,7 +18,7 @@ gcc:7.3.1
 ・Railsの使い方を調べてなんやかんやして自分のRailsアプリが動くようにします。  
 ・このソースコードをダウンロードします。  
 
-    git clone git://github.com/white-mns/teiki_archive_rails.git
+    git clone git://github.com/white-mns/prototypeA_rails.git
 
 ・[戦闘結果生成プログラム](https://github.com/white-mns/prototypeA_cpp)をコンパイルした実行ファイルを`vendor/buttle_start`にリンクします。 
 （リンク例：/var/cppに該当リポジトリをクローンした場合）
@@ -27,7 +27,7 @@ gcc:7.3.1
 
 ・動かします。  
 
-    cd teiki_arcive_rails
+    cd prototypeA_rails
     bundle install --path vendor/bundler
 （Gemのインストール先をアプリのディレクトリ内のvendor/bundleに指定します。  
 　この指定はなくても構いません。既に`.bundle`内に該当設定が指定されています）
